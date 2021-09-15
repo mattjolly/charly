@@ -27,13 +27,13 @@ formEl.addEventListener("submit", function (e) {
   request.addEventListener("load", function () {
     if (request.status === 302) { // CloudCannon redirects on success
       // It worked
-      alert('Thank you for your message');
     }
   });
 
   request.open(formEl.method, formEl.action);
   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   request.send(getFormDataString(formEl));
+  alert('Thank you for your message');
 });
 
 (function($) {
