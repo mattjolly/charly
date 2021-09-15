@@ -2349,6 +2349,22 @@ input, select, textarea {
 
 /* Image */
 
+	.content > img {
+		border: 0;
+		position: relative;
+		display: block;
+		margin: (_size(element-margin) * 1.5) 0;
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
 	.image {
 		border: 0;
 		display: inline-block;
@@ -3361,7 +3377,7 @@ input, select, textarea {
 					}
 
 				#wrapper > section.intro > .content {
-					height: 100vh;
+					height: 60vh;
 					max-width: none;
 				}
 
